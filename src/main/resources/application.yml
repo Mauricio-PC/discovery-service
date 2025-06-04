@@ -1,0 +1,15 @@
+server:
+  port: 8701
+
+spring:
+  application:
+    name: discovery-service
+
+eureka:
+  instance:
+    hostname: localhost  # Reemplazar por el nombre de host real o IP si usas Docker en red
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
